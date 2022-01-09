@@ -1,6 +1,10 @@
+.container{
+    margin:0;
+}
 .bodyPinkGradient{
     background: var(--liner-gradient-pink-violet);
-    height:51.8rem;
+    height:auto;
+
 
     header{
         display: flex;
@@ -27,4 +31,13 @@
     }
 
    
+}
+
+
+.bodyBlue{
+    background: blue;
+}
+
+.bodyGradiente{
+    background: red;
 }

@@ -1,0 +1,74 @@
+.container{
+    height:49.5rem;
+    width:100%;
+    background:#A578B6;
+
+    .wrapedCards{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 1rem;
+        
+        .card {
+            display: flex;
+            justify-content:center;
+            flex-direction: column;
+            height:38.7rem;
+            width:30rem;
+            background:#E3D5E8;
+            border-top-left-radius:2rem;
+            padding: 0 1.2rem;
+            position: relative;
+
+            div {
+                z-index: 9;
+                height: 100%;
+            }
+        }
+
+        h1{
+            color:hsl(330, 55%, 49%);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3rem;
+            line-height: 4rem;
+            text-align: center;
+            z-index: 9;
+        }
+
+        p{
+            color:var(--violet);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2rem;
+            line-height: 4rem;
+            z-index: 9;
+        }
+
+        svg {
+            position: absolute;
+            transform: scale(4.9) translate(35%, 2%) rotate(-28deg);
+        }
+
+        span:first-child {
+            height: 7.9rem;
+            width: 11.3rem;
+            border-top-left-radius: 2rem;
+            background: var(--violet);
+            position: absolute;
+            transform: translate(-90.9%, -205%);
+        }
+
+       span:nth-child(2) {
+            height: 7.9rem;
+            width: 11.3rem;
+            background: var(--violet);
+            position: absolute;
+            -webkit-transform: translate(-90.9%, -205%);
+            transform: translate(92.1%, 208%);
+        }
+
+    }
+
+}
