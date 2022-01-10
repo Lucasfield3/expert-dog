@@ -4,7 +4,7 @@ import logo from '../../public/images/Logo-Expert-Creat.png';
 import { MediaIcons } from '../components/MediaIcons';
 import styles from '../styles/pages/pinkHome.module.scss'
 import cx from 'classnames';
-import { AboutUs } from '../components/AboutUs';
+import { WrapedCards } from '../components/WrapedCards';
 
 export const PinkHome = () => {
 
@@ -18,15 +18,28 @@ export const PinkHome = () => {
     return(
         <> 
             <div onClick={()=> setToggle(!toggle)} className={styles.container} >
-                <div className={classNames}>
-                    <header>
-                    <MediaIcons/>
-                    </header>
-                    <main className={styles.logo}>
-                        <Image  src={logo} alt=''/>
-                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                    </main>
-                    <AboutUs/>
+                <div className={styles.home}>
+                    <div className={styles.bodyPinkGradient}>
+                        <header>
+                        <MediaIcons/>
+                        </header>
+                        <main className={styles.logo}>
+                            <Image  src={logo} alt=''/>
+                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                        </main>
+                    </div>
+                    <WrapedCards 
+                    title='Quem nós somos' 
+                    content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    isSlide={false}
+                    />
+                     <WrapedCards 
+                    title='O que falam sobre nós.' 
+                    content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                    isSlide={true}
+                    />
                 </div>            
             </div>
        </>

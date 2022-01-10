@@ -1,14 +1,14 @@
 .container{
     height:49.5rem;
     width:100%;
-    background:#A578B6;
+    padding: 2rem 0;
 
     .wrapedCards{
         display: flex;
         justify-content:center;
         align-items: center;
         overflow: hidden;
-        margin-top: 1rem;
+        padding-top: 1rem;
         
         .card {
             display: flex;
@@ -24,6 +24,20 @@
             div {
                 z-index: 9;
                 height: 100%;
+
+                .aspas1{
+                    position: absolute;
+                    transform: scale(1.2) translate(5%, 9%);
+                }
+                .aspas2{
+                    position: absolute;
+                    transform: scale(1.2) translate(773%, 925%);
+                }
+
+                .aspasPadding{
+                    padding:0 3rem; 
+                }
+
             }
         }
 
@@ -71,4 +85,12 @@
 
     }
 
+}
+
+.bodyGradienteRevert{
+    background: linear-gradient(180deg, #A578B6 0%, #C73478 174%);
+}
+
+.bodyGradiente{
+    background:#A578B6;
 }

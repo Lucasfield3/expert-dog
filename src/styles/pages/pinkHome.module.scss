@@ -1,10 +1,12 @@
 .container{
     margin:0;
 }
-.bodyPinkGradient{
-    background: var(--liner-gradient-pink-violet);
+.home{
     height:auto;
 
+    .bodyPinkGradient{
+        background:linear-gradient(180deg, #C73478 0%, #A578B6 73%);
+    }
 
     header{
         display: flex;
@@ -34,10 +36,3 @@
 }
 
 
-.bodyBlue{
-    background: blue;
-}
-
-.bodyGradiente{
-    background: red;
-}

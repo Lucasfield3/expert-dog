@@ -1,5 +1,5 @@
 :root{
-  --liner-gradient-pink-violet:linear-gradient(180deg, #C73478 0%, #A578B6 50%);
+  --liner-gradient-pink-violet:linear-gradient(180deg, #C73478 0%, #A578B6 30%);
   --cards-violet:#E3D5E8;
   --violet:#722C8D;
 }
@@ -26,4 +26,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+.rec .rec-slider-container{
+  height:41rem;
+}
+
+.rec .rec-arrow{
+  display: none;
 }
