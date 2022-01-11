@@ -2,9 +2,6 @@ import styles from '../../styles/components/aboutUs.module.scss'
 import { PawSvg } from '../PawSvg'
 import Carousel from 'react-elastic-carousel';
 import cx from 'classnames';
-import aspas1 from '../../../public/images/aspas1.svg'
-import aspas2 from '../../../public/images/aspas2.svg'
-import Image  from 'next/image'
 import { Aspas } from '../Aspas';
 
 interface AboutUsProps{
@@ -58,16 +55,16 @@ export const WrapedCards = ({title, content, isSlide}:AboutUsProps)=>{
             </Carousel>
            : 
             <div className={styles.wrapedCards}>
-            <span></span>
-            <span></span>
-            <div className={styles.card}>
-                <div>
-                    <h1>{title}</h1>
-                    <p>{content}</p>
+                <span></span>
+                <span></span>
+                <div className={styles.card}>
+                    <div>
+                        <h1>{title}</h1>
+                        <p>{content}</p>
+                    </div>
+                    <PawSvg/>
                 </div>
-                <PawSvg/>
             </div>
-        </div>
             }
         </div>
     )

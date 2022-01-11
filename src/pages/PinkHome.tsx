@@ -5,6 +5,8 @@ import { MediaIcons } from '../components/MediaIcons';
 import styles from '../styles/pages/pinkHome.module.scss'
 import cx from 'classnames';
 import { WrapedCards } from '../components/WrapedCards';
+import { PhotoGallery } from '../components/PhotoGallery';
+import { ContactUs } from '../components/ContactUs';
 
 export const PinkHome = () => {
 
@@ -21,7 +23,7 @@ export const PinkHome = () => {
                 <div className={styles.home}>
                     <div className={styles.bodyPinkGradient}>
                         <header>
-                        <MediaIcons/>
+                            <MediaIcons/>
                         </header>
                         <main className={styles.logo}>
                             <Image  src={logo} alt=''/>
@@ -40,6 +42,8 @@ export const PinkHome = () => {
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
                     isSlide={true}
                     />
+                    <PhotoGallery/>
+                    <ContactUs/>
                 </div>            
             </div>
        </>
