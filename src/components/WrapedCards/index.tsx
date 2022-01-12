@@ -1,8 +1,8 @@
 import styles from '../../styles/components/aboutUs.module.scss'
-import { PawSvg } from '../PawSvg'
+import { CustomSVG } from '../CustomSVG'
 import Carousel from 'react-elastic-carousel';
 import cx from 'classnames';
-import { Aspas } from '../Aspas';
+
 
 interface AboutUsProps{
     title: string;
@@ -34,10 +34,10 @@ export const WrapedCards = ({title, content, isSlide}:AboutUsProps)=>{
                     <div className={styles.card}>
                         <div>
                             <h1>{title}</h1>
-                            <Aspas classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
+                            <CustomSVG svgName='aspas' classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
                             <p className={styles.aspasPadding}>{content}</p>
                         </div>
-                        <PawSvg/>
+                        <CustomSVG color={{dogPaw:'#FFFFFF'}} svgName='dog-paw'/>
                     </div>
                 </div>
                 <div className={styles.wrapedCards}>
@@ -46,10 +46,10 @@ export const WrapedCards = ({title, content, isSlide}:AboutUsProps)=>{
                     <div className={styles.card}>
                         <div>
                             <h1>{title}</h1>
-                            <Aspas classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
+                            <CustomSVG svgName='aspas' classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
                             <p className={styles.aspasPadding}>{content}</p>
                         </div>
-                        <PawSvg/>
+                        <CustomSVG color={{dogPaw:'#FFFFFF'}} svgName='dog-paw'/>
                     </div>
                 </div> 
             </Carousel>
@@ -62,7 +62,7 @@ export const WrapedCards = ({title, content, isSlide}:AboutUsProps)=>{
                         <h1>{title}</h1>
                         <p>{content}</p>
                     </div>
-                    <PawSvg/>
+                    <CustomSVG color={{dogPaw:'#FFFFFF'}} svgName='dog-paw'/>
                 </div>
             </div>
             }

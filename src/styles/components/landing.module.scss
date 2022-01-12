@@ -1,0 +1,29 @@
+.bodyPinkGradient{
+    background:linear-gradient(180deg, #C73478 0%, #A578B6 73%);
+
+
+    header{
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.7rem 1.7rem 0 0;
+
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.4rem;
+        flex-direction: column;
+        padding: 0 2rem;
+
+        h3{
+            color: #ffff;
+            text-align: center;
+            line-height: 4rem;
+            font-size: 2.5rem;
+            font-weight: normal;
+        }
+    }
+
+}

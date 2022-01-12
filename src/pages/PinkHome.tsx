@@ -1,12 +1,11 @@
-import Image  from 'next/image'
 import { useState } from 'react';
-import logo from '../../public/images/Logo-Expert-Creat.png';
-import { MediaIcons } from '../components/MediaIcons';
 import styles from '../styles/pages/pinkHome.module.scss'
 import cx from 'classnames';
 import { WrapedCards } from '../components/WrapedCards';
 import { PhotoGallery } from '../components/PhotoGallery';
 import { ContactUs } from '../components/ContactUs';
+import Landing from '../components/Landing';
+import Footer from '../components/Footer';
 
 export const PinkHome = () => {
 
@@ -20,31 +19,22 @@ export const PinkHome = () => {
     return(
         <> 
             <div onClick={()=> setToggle(!toggle)} className={styles.container} >
-                <div className={styles.home}>
-                    <div className={styles.bodyPinkGradient}>
-                        <header>
-                            <MediaIcons/>
-                        </header>
-                        <main className={styles.logo}>
-                            <Image  src={logo} alt=''/>
-                            <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
-                        </main>
-                    </div>
+                <Landing/>
+                <WrapedCards 
+                title='Quem nós somos' 
+                content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                isSlide={false}
+                />
                     <WrapedCards 
-                    title='Quem nós somos' 
-                    content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    isSlide={false}
-                    />
-                     <WrapedCards 
-                    title='O que falam sobre nós.' 
-                    content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    isSlide={true}
-                    />
-                    <PhotoGallery/>
-                    <ContactUs/>
-                </div>            
+                title='O que falam sobre nós.' 
+                content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
+                isSlide={true}
+                />
+                <PhotoGallery/>
+                <ContactUs/>
+                <Footer/>           
             </div>
        </>
     )

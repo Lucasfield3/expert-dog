@@ -7,8 +7,9 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>My page title</title>
+        <title>Expertdog</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <link rel="icon" href="./images/dog-paw.svg"></link>
       </Head>
       <PinkHome/>
     </>
