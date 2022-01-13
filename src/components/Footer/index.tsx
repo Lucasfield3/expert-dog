@@ -4,8 +4,20 @@ import { CustomSVG } from '../CustomSVG';
 import styles from '../../styles/components/footer.module.scss'
 
 const Footer = () => {
+
+    const atTheBottom = ():boolean  => {
+        let isAtTheBottom = false
+       window.addEventListener('scroll', () =>{
+            if(window.innerHeight + window.pageYOffset >= document.body.offsetHeight){
+                return isAtTheBottom = true
+            }
+       })
+       console.log(isAtTheBottom)
+       return isAtTheBottom && true
+    }
+
     return (
-        <div className={styles.container}>
+        <div style={{marginBottom:atTheBottom && '8rem'}} className={styles.container}>
             <header>
                 <h1>Entre em contato</h1>
             </header>
