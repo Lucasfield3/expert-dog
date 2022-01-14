@@ -6,9 +6,13 @@ import cx from 'classnames';
 
 
 type Props = {
-    
+    toHome:()=>void;
+    toAboutUs:()=>void;
+    toFeedback:()=>void;
+    toPhotos:()=>void;
+    toContact:()=>void;
 };
-export const FixedMenu = (props: Props) => {
+export const FixedMenu = (props:Props) => {
 
     const [ isMenuShowing, setIsMenuShowing ] = useState(false)
 
@@ -26,29 +30,32 @@ export const FixedMenu = (props: Props) => {
           })
         }, [])
 
+        
+
+    
     return (
         <div className={classNames}>
-            <div>
+            <div onClick={props.toAboutUs}>
                 <span></span>
                 <CustomSVG color={{menu:'#722C8D'}} svgName='about-us'/>
                 <p>Sobre nós</p>
             </div>
-            <div>
+            <div  onClick={props.toFeedback}>
                 <span></span>
                 <CustomSVG color={{menu:'#722C8D'}} svgName='feedback'/>
                 <p>Feed backs</p>
             </div>
-            <div>
+            <div  onClick={props.toHome}>
                 <span></span>
                 <CustomSVG color={{menu:'violet'}} svgName='dog-house'/>
                 <p>Home</p>
             </div>
-            <div>
+            <div onClick={props.toContact}>
                 <span></span>
                 <CustomSVG color={{menu:'#722C8D'}} svgName='phone'/>
                 <p>Fale conosco</p>
             </div>
-            <div>
+            <div onClick={props.toPhotos}>
                 <span></span>
                 <CustomSVG color={{menu:'#722C8D'}} svgName='camera'/>
                 <p>Galeria</p>

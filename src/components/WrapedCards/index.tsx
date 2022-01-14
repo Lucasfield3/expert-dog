@@ -2,6 +2,7 @@ import styles from '../../styles/components/aboutUs.module.scss'
 import { CustomSVG } from '../CustomSVG'
 import Carousel from 'react-elastic-carousel';
 import cx from 'classnames';
+import { MutableRefObject } from 'react';
 
 
 interface AboutUsProps{

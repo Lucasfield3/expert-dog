@@ -4,10 +4,13 @@ import dogPhoto from '../../../public/images/photos/golden.jpg'
 import cx from 'classnames';
 
 import Image  from 'next/image'
+import { MutableRefObject } from 'react';
 
+type Props = {
 
+}
 
-export const ContactUs = ()=>{
+export const ContactUs = ({}:Props)=>{
 
       
     return(
