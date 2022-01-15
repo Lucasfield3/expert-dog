@@ -1,0 +1,41 @@
+.customSelect{
+    border: none;
+    color: var(--light-brown);
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+    position: relative;
+
+   > input{
+        background: transparent;
+        border-style: none;
+    }
+
+    input{
+        cursor: pointer;
+    }
+
+    
+    div{
+        position:absolute;
+        height: 22rem;
+        width: 17rem;
+        overflow:hidden;
+        display: flex;
+        flex-direction: column;
+        .select{
+            position: absolute;
+            transition: all 0.5s ease-in-out;
+            z-index: 10;
+            width:fit-content;
+        }
+    }
+
+}
+
+.showSelect{
+    transform: translateY(0%)
+}
+
+.hiddenSelect{
+    transform: translateY(-800%);
+}
