@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import { ChangeThemesContext } from '../../context/ChangeThemes';
 import styles from '../../styles/components/selectThemes.module.scss'
 import cx from 'classnames';
+import Image from  'next/image'
+import arrow from '../../../public/images/select.svg'
+import { CustomSVG } from '../CustomSVG';
 
 type Props = {
     
@@ -20,7 +23,6 @@ export const SelectThemes = (props: Props) => {
     })
 
     let isOver:boolean | null;
-    let clickedOut = false
     const dismissSelectMenu = ()=>{
         if(process.browser){
             const select = document.querySelector('#customSelect') 
@@ -44,22 +46,37 @@ export const SelectThemes = (props: Props) => {
 
     useEffect(()=>{
         dismissSelectMenu()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[isOver])
 
     return (
         <>
             <div id='customSelect' className={styles.customSelect} >
-                    <input type="text" id='defaultInput' onClick={()=>setShowMenu(!showMenu)} readOnly value={theme === "" ? 'temas' : theme}/>
+                   
+                        <input type="text" onClick={()=>setShowMenu(!showMenu)} readOnly value={theme === "" ? 'temas ▼' : theme+' ▼'}></input>                        {/* <CustomSVG svgName='arrow-down'/> */}
+                    
                         <div>
                             <div className={className}>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="padrao"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-branco-gradiente"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-preto-gradiente"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-preto-branco"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho-gradiente"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho-roxo"/>
-                                <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho-roxo-gradiente"/>
+                                <div>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="padrao"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-branco-gradiente"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-preto-gradiente"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-preto-branco"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho-gradiente"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho-roxo"/>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="branco-vermelho-roxo-gradiente"/>
+                                </div>
+                                <div>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
                             </div>
                         </div>  
                 </div>

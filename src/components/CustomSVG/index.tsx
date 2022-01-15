@@ -166,6 +166,14 @@ export const CustomSVG = (props: SVGProps)=>{
                     </g>
                 </g>
             </svg>}
+
+            {props.svgName === 'arrow-down' && 
+            <svg width="22" height="11" viewBox="0 0 22 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="0.706306" y1="0.966366" x2="10.9664" y2="10.2937" stroke="white" strokeLinecap="round"/>
+            <line x1="0.5" y1="-0.5" x2="14.3661" y2="-0.5" transform="matrix(-0.73994 0.672673 0.672673 0.73994 22 1)" stroke="white" strokeLinecap="round"/>
+            </svg>
+            
+            }
         </>
     )
 
