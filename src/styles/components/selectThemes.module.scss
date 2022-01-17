@@ -26,7 +26,6 @@
         width: 22rem;
         overflow: hidden;
         display: flex;
-        border-radius: 1rem;
 
         .select{
             position: absolute;
@@ -34,7 +33,7 @@
             z-index: 10;
             display: flex;
             background: white;
-            border-radius: 1rem;
+            border-radius: 0.5rem;
             padding: 0.5rem;
             height: 28.5rem;
             border: 2px solid var(--violet);

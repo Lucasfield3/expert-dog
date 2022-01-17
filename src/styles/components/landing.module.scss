@@ -1,6 +1,6 @@
-.bodyPinkGradient{
+.body{
     background:linear-gradient(180deg, #C73478 0%, #A578B6 73%);
-
+    transition: background 0.2s ease-in-out;
 
     header{
         display: flex;
@@ -16,13 +16,38 @@
         flex-direction: column;
         padding: 0 2rem;
 
-        h3{
-            color: #ffff;
+        .presentationText{
+            color:#FFFFFF;
             text-align: center;
             line-height: 4rem;
             font-size: 2.5rem;
             font-weight: normal;
         }
     }
+}
 
+
+.default{
+    background:linear-gradient(180deg, #C73478 0%, #A578B6 73%);
+}
+.white-purple-gradiente{
+    background:#FFFFFF;
+}
+.purple-black-gradiente{
+    background:#2E2727;
+}
+.purple-black-white{
+    background:#2E2727;
+}
+.white-red-gradiente{
+    background:#FFFFFF;
+}
+.white-red{
+    background:#FFFFFF;
+}
+.white-red-purple{
+    background:#FFFFFF;
+}
+.white-red-gradiente{
+    background:#FFFFFF;
 }

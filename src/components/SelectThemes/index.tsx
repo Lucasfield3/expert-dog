@@ -24,8 +24,17 @@ export const SelectThemes = (props: Props) => {
 
     let isOver:boolean | null;
     const dismissSelectMenu = ()=>{
+        
         if(process.browser){
             const select = document.querySelector('#customSelect') 
+            const elements = document.querySelector('#list')
+
+            elements.childNodes.forEach((input) => {  
+                input.addEventListener('click', ()=>{
+                    setShowMenu(false)
+                })
+            })
+
             select.addEventListener('mouseenter', ()=>{
                 isOver = true
            })
@@ -41,8 +50,14 @@ export const SelectThemes = (props: Props) => {
 
     }
 
-    
-
+    const setSelectText = () =>{
+         if(theme === 'roxo-branco-gradiente' || theme === 'branco-vermelho-roxo-gradiente'){
+            return 'var(--violet)'
+         } else  if(theme === 'branco-vermelho-gradiente' || theme === 'branco-vermelho' || theme === 'branco-vermelho-roxo'){
+            return '#2E2727'
+         } else return '#FFFFFF'
+        
+    }
 
     useEffect(()=>{
         dismissSelectMenu()
@@ -53,12 +68,12 @@ export const SelectThemes = (props: Props) => {
         <>
             <div id='customSelect' className={styles.customSelect} >
                    
-                        <input type="text" onClick={()=>setShowMenu(!showMenu)} readOnly value={theme === "" ? 'temas ▼' : theme+' ▼'}></input>                        {/* <CustomSVG svgName='arrow-down'/> */}
+                        <input type="text" readOnly style={{color:setSelectText()}} onClick={()=>setShowMenu(!showMenu)}  value={theme === "" ? 'temas ▼' : theme+' ▼'}></input>                        {/* <CustomSVG svgName='arrow-down'/> */}
                     
                         <div>
                             <div className={className}>
-                                <div>
-                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="padrao"/>
+                                <div id='list'>
+                                    <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="padrão"/>
                                     <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-branco-gradiente"/>
                                     <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-preto-gradiente"/>
                                     <input  type="text" readOnly  onClick={(e)=> ChangeTheme(e)} value="roxo-preto-branco"/>
