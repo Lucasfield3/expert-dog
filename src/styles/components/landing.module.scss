@@ -16,12 +16,18 @@
         flex-direction: column;
         padding: 0 2rem;
 
-        .presentationText{
+        div{
+            align-self: center;
+        }
+
+        h3{
             color:#FFFFFF;
             text-align: center;
             line-height: 4rem;
             font-size: 2.5rem;
             font-weight: normal;
+            width: 32rem;
+            align-self: center;
         }
     }
 }

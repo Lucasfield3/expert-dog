@@ -1,5 +1,5 @@
 .container{
-    background:#A578B6;
+    background: linear-gradient(180deg, #A578B6 0%, #C73478 174%);
     height:49.5rem;
     width:100%;
     padding: 2rem 0;
@@ -10,8 +10,8 @@
         align-items: center;
         overflow: hidden;
         padding-top: 1rem;
-        
-        .card {
+
+        .card{
             display: flex;
             justify-content:center;
             flex-direction: column;
@@ -26,29 +26,41 @@
                 z-index: 9;
                 height: 100%;
 
-                h1{
-                    color:hsl(330, 55%, 49%);
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 3rem;
-                    line-height: 4rem;
-                    text-align: center;
-                    z-index: 9;
+                .aspas1{
+                    position: absolute;
+                    transform: scale(1.2) translate(5%, 9%);
                 }
-        
-                p{
-                    color:var(--violet);
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 2rem;
-                    line-height: 4rem;
-                    z-index: 9;
+                .aspas2{
+                    position: absolute;
+                    transform: scale(1.2) translate(773%, 925%);
                 }
-        
+
+                .aspasPadding{
+                    padding:0 3rem; 
+                }
+
             }
         }
 
-        
+        h1{
+            color:hsl(330, 55%, 49%);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3rem;
+            line-height: 4rem;
+            text-align: center;
+            z-index: 9;
+        }
+
+        p{
+            color:var(--violet);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2rem;
+            line-height: 4rem;
+            z-index: 9;
+        }
+
         svg {
             position: absolute;
             transform: scale(4.9) translate(35%, 2%) rotate(-28deg);
@@ -72,14 +84,7 @@
             transform: translate(92.1%, 208%);
         }
 
+
     }
 
-}
-
-.bodyGradienteRevert{
-    background: linear-gradient(180deg, #A578B6 0%, #C73478 174%);
-}
-
-.bodyGradiente{
-    background:#A578B6;
 }

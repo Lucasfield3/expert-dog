@@ -1,11 +1,12 @@
 import {  useRef } from 'react';
 import styles from '../styles/pages/pinkHome.module.scss'
-import { WrapedCards } from '../components/WrapedCards';
 import { PhotoGallery } from '../components/PhotoGallery';
 import { ContactUs } from '../components/ContactUs';
 import Landing from '../components/Landing';
 import Footer from '../components/Footer';
 import { FixedMenu } from '../components/FixedMenu';
+import { WrappedCardsFeed } from '../components/WrappedCardsFeed';
+import { WrappedCardsAboutUs } from '../components/WrappedCardsAboutUs';
 
 export const PinkHome = () => {
     const toHome = useRef<HTMLDivElement>(null)
@@ -22,20 +23,10 @@ export const PinkHome = () => {
                     <Landing/>
                 </div>
                 <div ref={toAboutUs}>
-                    <WrapedCards                  
-                    title='Quem nós somos' 
-                    content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    isSlide={false}
-                    />
+                    <WrappedCardsAboutUs/>
                 </div>
                 <div ref={toFeedback}>
-                    <WrapedCards   
-                    title='O que falam sobre nós.' 
-                    content='Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.'
-                    isSlide={true}
-                    />
+                    <WrappedCardsFeed/>
                 </div>
                 <div ref={toPhotos}>
                     <PhotoGallery />

@@ -2,12 +2,19 @@ import * as React from 'react';
 import { createContext, useEffect, useState } from 'react';
 
 
-
 type ChangeThemesContextData = {
     ChangeTheme:(e:React.MouseEvent<HTMLInputElement, MouseEvent>)=>void;
     theme:string;
-    setBack:()=>string;
-    setColor:()=>string;
+    changeColor:(
+        padrao:string, 
+        purpleWhiteGradiente:string, 
+        purpleBlackGradiente:string, 
+        purpleBlackWhite:string,
+        whiteRedGradiente:string,
+        whiteRed:string,
+        whiteRedPurple:string,
+        whiteRedPurpleGradiente:string,
+    )=>string;
 }
 
 export const ChangeThemesContext = createContext({} as ChangeThemesContextData);
@@ -23,77 +30,49 @@ export const ChangeThemesProvider = (props: ProviderProps) => {
         setTheme(theme === "" ? e.currentTarget.value : e.currentTarget.value) 
     }
 
-    
-  
-    const setColor = ():string=>{
+    const changeColor = (
+        padrao:string, 
+        purpleWhiteGradiente:string, 
+        purpleBlackGradiente:string, 
+        purpleBlackWhite:string,
+        whiteRedGradiente:string,
+        whiteRed:string,
+        whiteRedPurple:string,
+        whiteRedPurpleGradiente:string,
+        )=>{
         if(theme === 'padrão' || theme === ''){
-            return '#FFFFFF'
+            return padrao
         }
         if(theme === 'roxo-branco-gradiente'){
-            return '#722C8D'
+            return purpleWhiteGradiente
         }
         if(theme === 'roxo-preto-gradiente'){
-            return '#FFFFFF'
+            return purpleBlackGradiente
         }
         if(theme === 'roxo-preto-branco'){
-            return '#FFFFFF'
+            return purpleBlackWhite
         }
         if(theme === 'branco-vermelho-gradiente'){
-            return '#2E2727'
+            return whiteRedGradiente
         }
         if(theme === 'branco-vermelho'){
-            return '#2E2727'
+            return whiteRed
         }   
         if(theme === 'branco-vermelho-roxo'){
-            return '#2E2727'
+            return whiteRedPurple
         }
         if(theme === 'branco-vermelho-roxo-gradiente'){
-            return '#722C8D'
+            return whiteRedPurpleGradiente
         }
     }
-
   
-
-    const setBack = ()=>{
-        if(theme === 'padrão' || theme === ''){
-            
-            return  'var(--liner-gradient-pink-violet)'
-        } 
-        if(theme === 'roxo-branco-gradiente'){ 
-            return '#FFFFFF'
-        }
-        if(theme === 'roxo-preto-gradiente'){
-            return '#2E2727'
-        }
-        if(theme === 'roxo-preto-branco'){
-            return '#2E2727'    
-        } 
-        if(theme === 'branco-vermelho-gradiente'){
-            return '#FFFFFF'
-        } 
-        if(theme === 'branco-vermelho'){
-            return '#FFFFFF'
-        } 
-        if(theme === 'branco-vermelho-roxo'){
-            
-            return '#FFFFFF'
-        } 
-        if(theme === 'branco-vermelho-roxo-gradiente'){
-            
-            return '#FFFFFF'
-        } 
-    }
-
-
     useEffect(() =>{
         setTheme(theme)
-        setColor()
-        setBack()
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [theme])
 
     return (
-        <ChangeThemesContext.Provider value={{ChangeTheme, theme, setBack, setColor}}>
+        <ChangeThemesContext.Provider value={{ChangeTheme, theme, changeColor}}>
             {props.children}
         </ChangeThemesContext.Provider>
     );

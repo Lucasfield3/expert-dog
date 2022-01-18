@@ -16,14 +16,23 @@ type Props = {
 
 const Landing = ({}:Props) => {
 
-    const { theme, setBack , setColor} = useContext(ChangeThemesContext)
+    const { theme, changeColor} = useContext(ChangeThemesContext)
 
    //const element = document.querySelector('h3')
 
    
 
     return (
-        <div style={{background:setBack()}} className={styles.body}>
+        <div style={{background:changeColor(
+            'var(--liner-gradient-pink-violet)',
+            '#FFFFFF',
+            '#2E2727',
+            '#2E2727',
+            '#FFFFFF',
+            '#FFFFFF',
+            '#FFFFFF',
+            '#FFFFFF'
+        )}} className={styles.body}>
             <header>
                 <SelectThemes/>
                 <CustomSVG svgName='media'/>
@@ -48,7 +57,16 @@ const Landing = ({}:Props) => {
                 <div style={{display:theme === 'branco-vermelho-roxo-gradiente' ? 'block' : 'none'}}>
                     <Image width='300' height='300' src={logoLinear} alt=''/>
                 </div>
-                <h3 className={styles.presentationText} style={{color:setColor()}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                <h3 style={{color:changeColor(
+                    '#FFFFFF',
+                    '#722C8D',
+                    '#FFFFFF',
+                    '#FFFFFF',
+                    '#2E2727',
+                    '#2E2727',
+                    '#2E2727',
+                    '#722C8D'
+                )}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
             </main>
         </div>
     );
