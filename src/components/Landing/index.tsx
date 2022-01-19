@@ -26,8 +26,8 @@ const Landing = ({}:Props) => {
         <div style={{background:changeColor(
             'var(--liner-gradient-pink-violet)',
             '#FFFFFF',
-            '#2E2727',
-            '#2E2727',
+            'var(--black)',
+            'var(--black)',
             '#FFFFFF',
             '#FFFFFF',
             '#FFFFFF',
@@ -59,13 +59,13 @@ const Landing = ({}:Props) => {
                 </div>
                 <h3 style={{color:changeColor(
                     '#FFFFFF',
-                    '#722C8D',
+                    'var(--purple)',
                     '#FFFFFF',
                     '#FFFFFF',
-                    '#2E2727',
-                    '#2E2727',
-                    '#2E2727',
-                    '#722C8D'
+                    'var(--black)',
+                    'var(--black)',
+                    'var(--black)',
+                    'var(--purple)'
                 )}}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
             </main>
         </div>

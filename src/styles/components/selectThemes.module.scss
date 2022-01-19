@@ -36,7 +36,7 @@
             border-radius: 0.5rem;
             padding: 0.5rem;
             height: 28.5rem;
-            border: 2px solid var(--violet);
+            border: 2px solid var(--purple);
 
             div:first-child{
                 display: flex;
@@ -61,16 +61,16 @@
                 }
 
                 span:nth-child(2){
-                    background: linear-gradient(180deg, #722C8D 0%, #FFFFFF 70%);
+                    background: linear-gradient(180deg, var(--purple) 0%, #FFFFFF 70%);
                     border-bottom: 0.1px solid #141414;
                 }
 
                 span:nth-child(3) {
-                    background:linear-gradient(180deg, #722C8D 0%, #2E2727 124%);
+                    background:linear-gradient(180deg, var(--purple) 0%, var(--black) 124%);
                 }
 
                 span:nth-child(4){
-                    background:linear-gradient(180deg, #722C8D 33%, #2E2727 33% 66%, #FFFFFF 66%);
+                    background:linear-gradient(180deg, var(--purple) 33%, var(--black) 33% 66%, #FFFFFF 66%);
                     border-bottom: 0.1px solid #141414;
                 }
 
@@ -85,7 +85,7 @@
                 }
 
                 span:nth-child(7){
-                    background:linear-gradient(180deg, #FFFFFF 33%, #FD0D16 33% 66%, #722C8D 66%);
+                    background:linear-gradient(180deg, #FFFFFF 33%, #FD0D16 33% 66%, var(--purple) 66%);
                     border-top: 0.1px solid #141414;
                 }
 
@@ -101,8 +101,8 @@
                 border-style: none;
                 background: transparent;
                 margin-top: 1.2rem;
-                border-bottom: 0.5px solid var(--violet);
-                color: var(--violet);
+                border-bottom: 0.5px solid var(--purple);
+                color: var(--purple);
                 transition: all 0.2s ease-in-out;
                 margin-right: 0.4rem;
                 border-top-left-radius: 0.4rem;

@@ -52,9 +52,9 @@ export const SelectThemes = (props: Props) => {
 
     const setSelectText = () =>{
          if(theme === 'roxo-branco-gradiente' || theme === 'branco-vermelho-roxo-gradiente'){
-            return 'var(--violet)'
+            return 'var(--purple)'
          } else  if(theme === 'branco-vermelho-gradiente' || theme === 'branco-vermelho' || theme === 'branco-vermelho-roxo'){
-            return '#2E2727'
+            return 'var(--black)'
          } else return '#FFFFFF'
         
     }

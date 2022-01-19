@@ -4,6 +4,22 @@
     width:100%;
     padding: 2rem 0;
 
+    > div{
+        background: transparent;
+        div:nth-child(2){
+
+            button[tabIndex="0"]{
+                box-shadow: 0 0 1px 3px var(--purple);  
+                background-color: white;
+            }
+
+            button[tabIndex="-1"]{
+                box-shadow: 0 0 1px 3px var(--purple);  
+                background-color:var(--purple);
+            }
+        }
+    }
+
     .wrapedCards{
         display: flex;
         justify-content:center;
@@ -53,7 +69,7 @@
         }
 
         p{
-            color:var(--violet);
+            color:var(--purple);
             font-style: normal;
             font-weight: normal;
             font-size: 2rem;
@@ -70,7 +86,7 @@
             height: 7.9rem;
             width: 11.3rem;
             border-top-left-radius: 2rem;
-            background: var(--violet);
+            background: var(--purple);
             position: absolute;
             transform: translate(-90.9%, -205%);
         }
@@ -78,7 +94,7 @@
        span:nth-child(2) {
             height: 7.9rem;
             width: 11.3rem;
-            background: var(--violet);
+            background: var(--purple);
             position: absolute;
             -webkit-transform: translate(-90.9%, -205%);
             transform: translate(92.1%, 208%);
@@ -88,3 +104,4 @@
     }
 
 }
+

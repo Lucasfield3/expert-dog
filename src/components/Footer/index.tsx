@@ -24,8 +24,8 @@ const Footer = () => {
             <main>
                 <div>
                     <h3>Telefones:</h3>
-                    <p><CustomSVG color={{whatsapp:'#722C8D'}} svgName='whatsapp'/>(11)9999-9999</p>
-                    <p><CustomSVG color={{whatsapp:'#722C8D'}} svgName='whatsapp'/>(11)9999-9999</p>
+                    <p><CustomSVG color={{whatsapp:'var(--purple)'}} svgName='whatsapp'/>(11)9999-9999</p>
+                    <p><CustomSVG color={{whatsapp:'var(--purple)'}} svgName='whatsapp'/>(11)9999-9999</p>
                 </div>
                 <div>
                     <h3>Trabalhe conosco ou inscreva-se em nossos cursos:</h3>

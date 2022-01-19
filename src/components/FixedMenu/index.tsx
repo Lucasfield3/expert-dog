@@ -37,12 +37,12 @@ export const FixedMenu = (props:Props) => {
         <div className={classNames}>
             <div onClick={props.toAboutUs}>
                 <span></span>
-                <CustomSVG color={{menu:'#722C8D'}} svgName='about-us'/>
+                <CustomSVG color={{menu:'var(--purple)'}} svgName='about-us'/>
                 <p>Sobre nós</p>
             </div>
             <div  onClick={props.toFeedback}>
                 <span></span>
-                <CustomSVG color={{menu:'#722C8D'}} svgName='feedback'/>
+                <CustomSVG color={{menu:'var(--purple)'}} svgName='feedback'/>
                 <p>Feed backs</p>
             </div>
             <div  onClick={props.toHome}>
@@ -52,12 +52,12 @@ export const FixedMenu = (props:Props) => {
             </div>
             <div onClick={props.toContact}>
                 <span></span>
-                <CustomSVG color={{menu:'#722C8D'}} svgName='phone'/>
+                <CustomSVG color={{menu:'var(--purple)'}} svgName='phone'/>
                 <p>Fale conosco</p>
             </div>
             <div onClick={props.toPhotos}>
                 <span></span>
-                <CustomSVG color={{menu:'#722C8D'}} svgName='camera'/>
+                <CustomSVG color={{menu:'var(--purple)'}} svgName='camera'/>
                 <p>Galeria</p>
             </div>
         </div>
