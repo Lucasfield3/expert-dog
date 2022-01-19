@@ -4,21 +4,21 @@
     width:100%;
     padding: 2rem 0;
 
-    > div{
-        background: transparent;
-        div:nth-child(2){
+    // > div{
+    //     background: transparent;
+    //     div:nth-child(2){
 
-            button[tabIndex="0"]{
-                box-shadow: 0 0 1px 3px var(--purple);  
-                background-color: white;
-            }
+    //         button[tabIndex="0"]{
+    //             box-shadow: 0 0 1px 3px var(--purple);  
+    //             background-color: white;
+    //         }
 
-            button[tabIndex="-1"]{
-                box-shadow: 0 0 1px 3px var(--purple);  
-                background-color:var(--purple);
-            }
-        }
-    }
+    //         button[tabIndex="-1"]{
+    //             box-shadow: 0 0 1px 3px var(--purple);  
+    //             background-color:var(--purple);
+    //         }
+    //     }
+    // }
 
     .wrapedCards{
         display: flex;

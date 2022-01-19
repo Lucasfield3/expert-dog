@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction:column;
     background: linear-gradient(180deg, #b85193 0%, #A578B6 100%);
+    padding-bottom: 1rem;
 
     h1{
         color: #FFFFFF;
@@ -15,7 +16,7 @@
     }
 
     .card{
-        height:43rem;
+        height:41rem;
         width:30.6rem;
         background: #FFFFFF;
         display: flex;
