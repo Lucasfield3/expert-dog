@@ -26,7 +26,8 @@ export const ContactUs = ({}:Props)=>{
                 '#FFFFFF',
                 'var(--red)',
                 'linear-gradient(180deg, #A577B4 0%, #FA3944 100%)'   
-            ) 
+            ),
+            borderBottom:theme === 'branco-vermelho' || theme === 'roxo-branco-gradiente' ? '1px solid' : 'none'
         }as CSSProperties,
         myButton:{
             background:changeColor(

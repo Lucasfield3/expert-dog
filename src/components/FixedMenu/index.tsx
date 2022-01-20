@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import styles from '../../styles/components/fixedMenu.module.scss'
 import { CustomSVG } from '../CustomSVG';
 import cx from 'classnames';
+import { ChangeThemesContext } from '../../context/ChangeThemes';
 
 
 type Props = {
@@ -15,6 +16,7 @@ type Props = {
 export const FixedMenu = (props:Props) => {
 
     const [ isMenuShowing, setIsMenuShowing ] = useState(false)
+    const {changeColor, theme} = React.useContext(ChangeThemesContext)
 
     let classNames = cx(styles.menu, {
       [styles.showMenu]:isMenuShowing,
@@ -30,34 +32,36 @@ export const FixedMenu = (props:Props) => {
           })
         }, [])
 
-        
+
+    const colorIcons = theme.includes('vermelho') ? 'var(--red)' : 'var(--purple)'
+
 
     
     return (
         <div className={classNames}>
             <div onClick={props.toAboutUs}>
-                <span></span>
-                <CustomSVG color={{menu:'var(--purple)'}} svgName='about-us'/>
+                <span style={{background:colorIcons}}></span>
+                <CustomSVG color={{menu:colorIcons}} svgName='about-us'/>
                 <p>Sobre nós</p>
             </div>
             <div  onClick={props.toFeedback}>
-                <span></span>
-                <CustomSVG color={{menu:'var(--purple)'}} svgName='feedback'/>
+                <span style={{background:colorIcons}}></span>
+                <CustomSVG color={{menu:colorIcons}} svgName='feedback'/>
                 <p>Feed backs</p>
             </div>
             <div  onClick={props.toHome}>
-                <span></span>
-                <CustomSVG color={{menu:'violet'}} svgName='dog-house'/>
+                <span style={{background:colorIcons}}></span>
+                <CustomSVG color={{menu:colorIcons}} svgName='dog-house'/>
                 <p>Home</p>
             </div>
             <div onClick={props.toContact}>
-                <span></span>
-                <CustomSVG color={{menu:'var(--purple)'}} svgName='phone'/>
+                <span style={{background:colorIcons}}></span>
+                <CustomSVG color={{menu:colorIcons}} svgName='phone'/>
                 <p>Fale conosco</p>
             </div>
             <div onClick={props.toPhotos}>
-                <span></span>
-                <CustomSVG color={{menu:'var(--purple)'}} svgName='camera'/>
+                <span style={{background:colorIcons}}></span>
+                <CustomSVG color={{menu:colorIcons}} svgName='camera'/>
                 <p>Galeria</p>
             </div>
         </div>

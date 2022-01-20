@@ -99,7 +99,7 @@ export const CustomSVG = (props: SVGProps)=>{
                     </svg>
                 </a>
             </>}
-            {props.svgName  === 'dog-house' && <Image width="25" height="25" src={props.color.menu === 'violet' ? dogHouseViolet : dogHouseRed} alt="dog-house"/>}
+            {props.svgName  === 'dog-house' && <Image width="25" height="25" src={props.color.menu === 'var(--purple)' ? dogHouseViolet : dogHouseRed} alt="dog-house"/>}
 
             {props.svgName  === 'phone' && 
             <svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -118,12 +118,12 @@ export const CustomSVG = (props: SVGProps)=>{
                     </g>
                 </g>
             </svg>}
-            {props.svgName  === 'feedback' && 
+            {props.svgName  === 'feedback' &&  
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15 3.01245C6.5875 3.01245 0 7.33745 0 12.8625C0 17.35 4.4125 21.15 10.8625 22.3375L11.1125 25.25C11.147 25.6354 11.2983 26.0011 11.5462 26.2982C11.7942 26.5953 12.1269 26.8096 12.5 26.9125C12.679 26.9627 12.8641 26.988 13.05 26.9875C13.3294 26.9795 13.6035 26.9091 13.8523 26.7815C14.101 26.6539 14.318 26.4723 14.4875 26.25L17.4375 22.5C24.75 21.8125 30 17.775 30 12.8625C30 7.33745 23.4125 3.01245 15 3.01245ZM16.7 20.1375H16.1625L13.475 23.4875L13.175 20.1125L12.1875 20C6.575 19.2374 2.5 16.25 2.5 12.8625C2.5 8.87495 8.225 5.51245 15 5.51245C21.775 5.51245 27.5 8.87495 27.5 12.8625C27.5 16.45 22.75 19.6375 16.7 20.1375Z" fill={props.color.menu}/>
-                <ellipse cx="15" cy="13" rx="14" ry="9" fill="#722C8D"/>
-                <ellipse cx="14" cy="22.5" rx="2" ry="1.5" fill="#722C8D"/>
-            </svg>
+                <ellipse cx="15" cy="13" rx="14" ry="9" fill={props.color.menu}/>
+                <ellipse cx="14" cy="22.5" rx="2" ry="1.5" fill={props.color.menu}/>
+            </svg>          
             }
             {props.svgName  === 'camera' && 
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
