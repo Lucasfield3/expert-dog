@@ -4,82 +4,122 @@
     width:100%;
     padding: 2rem 0;
 
-    .wrapedCards{
-        display: flex;
-        justify-content:center;
-        align-items: center;
-        overflow: hidden;
-        padding-top: 1rem;
-        
-        .card {
-            display: flex;
-            justify-content:center;
-            flex-direction: column;
-            height:38.7rem;
-            width:30rem;
-            background:#E3D5E8;
-            border-top-left-radius:2rem;
-            padding: 0 1.2rem;
-            position: relative;
+}
 
-            div {
-                z-index: 9;
-                height: 100%;
+.wrapedCards{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    overflow: hidden;
+    padding-top: 1rem;
+    margin:0 5rem;
+    
+}
 
-                h1{
-                    color:hsl(330, 55%, 49%);
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 3rem;
-                    line-height: 4rem;
-                    text-align: center;
-                    z-index: 9;
-                }
-        
-                p{
-                    color:var(--purple);
-                    font-style: normal;
-                    font-weight: normal;
-                    font-size: 2rem;
-                    line-height: 4rem;
-                    z-index: 9;
-                }
-        
-            }
+.card{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    height:38.7rem;
+    width:125rem;
+    background:#E3D5E8;
+    border-top-left-radius:2rem;
+    padding: 0 3rem;
+    position: relative;
+  
+    div {
+        z-index: 9;
+        height: 100%;
+  
+        h1{
+            color:hsl(330, 55%, 49%);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 3rem;
+            line-height: 4rem;
+            text-align: center;
+            z-index: 9;
         }
+  
+        p{
+            color:var(--purple);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 2.5rem;
+            line-height: 4rem;
+            z-index: 9;
+        }
+  
+    }
+  }
+  
 
+.mySvg {
+    position: absolute;
+    transform:scale(5.9) translate(150%, -1%) rotate(-28deg);
+}
+
+.mySpan1{
+    height: 7.9rem;
+    width: 11.3rem;
+    border-top-left-radius: 2rem;
+    background: var(--purple);
+    position: absolute; 
+    transform: translate(-510%, -205%);
+}
+
+.mySpan2{
+    height: 7.9rem;
+    width: 11.3rem;
+    background: var(--purple);
+    position: absolute;
+    transform: translate(511%, 208%);
+}
+
+
+@media (max-width: 1350px) {
+
+
+    .card{
+        width: 76rem;
+    }
+    .mySvg {
         
-        svg {
-            position: absolute;
-            transform: scale(4.9) translate(35%, 2%) rotate(-28deg);
-        }
-
-        span:first-child {
-            height: 7.9rem;
-            width: 11.3rem;
-            border-top-left-radius: 2rem;
-            background: var(--purple);
-            position: absolute;
-            transform: translate(-90.9%, -205%);
-        }
-
-       span:nth-child(2) {
-            height: 7.9rem;
-            width: 11.3rem;
-            background: var(--purple);
-            position: absolute;
-            -webkit-transform: translate(-90.9%, -205%);
-            transform: translate(92.1%, 208%);
-        }
-
+        transform: scale(5.9) translate(87%, -2%) rotate(-28deg);
     }
 
+    .mySpan1{
+        
+        transform:translate(-293.9%, -205%);
+    }
+
+    .mySpan2{
+        
+        transform:translate(295.1%, 208%);
+    }
 }
 
-.bodyGradienteRevert{
-    background: linear-gradient(180deg, #A578B6 0%, #C73478 174%);
-}
 
-.bodyGradiente{
-    background:#A578B6;
+@media (max-width: 860px) {
+
+    .card{
+        width: 29.9rem;
+        padding:0 1.8rem;
+    }
+
+    .mySvg {
+        
+        transform: scale(4.9) translate(33%, -2%) rotate(-28deg);
+    }
+
+    .mySpan1{
+        
+        transform:translate(-89.9%, -205%);
+    }
+
+    .mySpan2{
+        
+        transform:translate(91.1%, 208%);
+    }
+
 }
