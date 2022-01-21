@@ -9,6 +9,7 @@ import { CustomSVG } from '../CustomSVG';
 import { SelectThemes } from '../SelectThemes';
 import { ChangeThemesContext } from '../../context/ChangeThemes';
 import cx from 'classnames';
+import { ChangeSizeContext } from '../../context/ChangeSize';
 
 type Props = {
 
@@ -17,6 +18,7 @@ type Props = {
 const Landing = ({}:Props) => {
 
     const { theme, changeColor} = useContext(ChangeThemesContext)
+    const { match, setSize} = useContext(ChangeSizeContext)
 
    //const element = document.querySelector('h3')
 
@@ -57,7 +59,7 @@ const Landing = ({}:Props) => {
                 <div style={{display:theme === 'branco-vermelho-roxo-gradiente' ? 'block' : 'none'}}>
                     <Image width='300' height='300' src={logoLinear} alt=''/>
                 </div>
-                <h3 style={{color:changeColor(
+                <h3 className={styles.presentation} style={{color:changeColor(
                     '#FFFFFF',
                     'var(--purple)',
                     '#FFFFFF',

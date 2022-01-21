@@ -5,6 +5,7 @@ import styles from '../../styles/components/feed.module.scss'
 import Carousel from 'react-elastic-carousel';
 import { ChangeThemesContext } from '../../context/ChangeThemes';
 import { CSSProperties, useEffect } from 'react';
+import { ChangeSizeContext } from '../../context/ChangeSize';
 
 type Props = {
     
@@ -12,6 +13,7 @@ type Props = {
 export const WrappedCardsFeed = (props: Props) => {
 
     const { theme, changeColor} = React.useContext(ChangeThemesContext)
+    const { setSize} = React.useContext(ChangeSizeContext)
 
     const breakPoints = [
         {width: 1, itemsToShow:1}
@@ -20,7 +22,8 @@ export const WrappedCardsFeed = (props: Props) => {
     const myStyle= {
         myCard:{
             background:theme.includes('vermelho') ? '#FFFFFF' : '#E3D5E8', 
-            boxShadow:theme.includes('vermelho') ? 'inset 0px 0px 4px 0px #000000' : 'none'
+            boxShadow:theme.includes('vermelho') ? 'inset 0px 0px 4px 0px #000000' : 'none',
+            width: setSize('76rem', '29.9rem', '125rem')
         } as CSSProperties,
         mySpan1:{
             background:changeColor(
@@ -82,64 +85,6 @@ export const WrappedCardsFeed = (props: Props) => {
                 ),
     } 
 
-    // const changeCarouselColor = () =>{
-    //     if(process.browser){
-    //         const divMain= document.querySelector<HTMLElement>('.rec-dot')
-    //         const buttonActive = document.querySelector<HTMLElement>(':not(.rec .rec-arrow) [tabindex = "-1"]')
-    //         const button = document.querySelector<HTMLElement>(':not(.rec .rec-arrow) [tabindex = "0"]')
-    //         button.addEventListener('change')
-    //         buttonActive.style.background = changeColor(
-    //             'var(--purple)',
-    //             'var(--purple)',
-    //             'var(--purple)',
-    //             'var(--purple)',
-    //             'white',
-    //             'var(--red)',
-    //             'white',
-    //             'white'
-    //         )
-    //         buttonActive.style.boxShadow = changeColor(
-    //             '0 0 1px 3px var(--purple)',
-    //             '0 0 1px 3px var(--purple)',
-    //             '0 0 1px 3px var(--purple)',
-    //             '0 0 1px 3px var(--purple)',
-    //             '0 0 1px 3px white',
-    //             '0 0 1px 3px var(--red)',
-    //             '0 0 1px 3px white',
-    //             '0 0 1px 3px white'
-    //         )
-          
-    //            button.style.backgroundColor = changeColor(
-    //                  'white',
-    //                  'white',
-    //                  'white',
-    //                  'white',
-    //                  'var(--red)',
-    //                  'white',
-    //                  'var(--purple)',
-    //                  'var(--purple)',
-    //              )
-    //              button.style.boxShadow = changeColor(
-    //                  '0 0 1px 3px var(--purple)',
-    //                  '0 0 1px 3px var(--purple)',
-    //                  '0 0 1px 3px var(--purple)',
-    //                  '0 0 1px 3px var(--purple)',
-    //                  '0 0 1px 3px white',
-    //                  '0 0 1px 3px var(--red)',
-    //                  '0 0 1px 3px white',
-    //                  '0 0 1px 3px white'
-    //              )
-
-           
-                 
-            
-    //     }
-    // }
-
-    // useEffect(() =>{
-    //     changeCarouselColor()
-    // }, [theme])
-    
  
     return (
         <div style={{background:changeColor(
@@ -155,8 +100,8 @@ export const WrappedCardsFeed = (props: Props) => {
              <Carousel className={styles.carousel} showArrows={false} isRTL={false} breakPoints={breakPoints}>
            
                 <div className={styles.wrapedCards}>
-                    <span style={myStyle.mySpan1}></span>
-                    <span style={myStyle.mySpan2}></span>
+                    <span className={styles.mySpan1} style={myStyle.mySpan1}></span>
+                    <span className={styles.mySpan2}  style={myStyle.mySpan2}></span>
                     <div style={myStyle.myCard} className={styles.card}>
                         <div>
                             <h1 style={myStyle.myH1}>O que falam sobre nós.</h1>
@@ -164,12 +109,12 @@ export const WrappedCardsFeed = (props: Props) => {
                             <p style={myStyle.myP} className={styles.aspasPadding}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
-                        <CustomSVG color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
+                        <CustomSVG svgprops={{className:styles.mySvg}} color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
                     </div>
                 </div>
                 <div className={styles.wrapedCards}>
-                    <span style={myStyle.mySpan1}></span>
-                    <span style={myStyle.mySpan2}></span>
+                <span className={styles.mySpan1} style={myStyle.mySpan1}></span>
+                    <span className={styles.mySpan2}  style={myStyle.mySpan2}></span>
                     <div style={myStyle.myCard} className={styles.card}>
                         <div>
                             <h1 style={myStyle.myH1}>O que falam sobre nós.</h1>
@@ -177,7 +122,7 @@ export const WrappedCardsFeed = (props: Props) => {
                             <p style={myStyle.myP} className={styles.aspasPadding}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
-                        <CustomSVG color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
+                        <CustomSVG svgprops={{className:styles.mySvg}} color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
                     </div>
                 </div>
             </Carousel>

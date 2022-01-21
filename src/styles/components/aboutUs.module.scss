@@ -76,7 +76,6 @@
     transform: translate(511%, 208%);
 }
 
-
 @media (max-width: 1350px) {
 
 
@@ -87,39 +86,40 @@
         
         transform: scale(5.9) translate(87%, -2%) rotate(-28deg);
     }
-
+  
     .mySpan1{
         
         transform:translate(-293.9%, -205%);
     }
-
+  
     .mySpan2{
         
         transform:translate(295.1%, 208%);
     }
-}
-
-
-@media (max-width: 860px) {
-
+  }
+  
+  
+  @media (max-width: 860px) {
+  
     .card{
         width: 29.9rem;
         padding:0 1.8rem;
     }
-
+  
     .mySvg {
         
         transform: scale(4.9) translate(33%, -2%) rotate(-28deg);
     }
-
+  
     .mySpan1{
         
         transform:translate(-89.9%, -205%);
     }
-
+  
     .mySpan2{
         
         transform:translate(91.1%, 208%);
     }
-
-}
+  
+  }
+  

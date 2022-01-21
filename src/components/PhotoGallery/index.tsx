@@ -4,8 +4,9 @@ import dogPhoto from '../../../public/images/photos/golden.jpg'
 import cx from 'classnames';
 
 import Image  from 'next/image'
-import { CSSProperties,  useContext, useEffect} from 'react';
+import { CSSProperties,  useContext, useEffect, useState} from 'react';
 import { ChangeThemesContext } from '../../context/ChangeThemes';
+import { ChangeSizeContext } from '../../context/ChangeSize';
 
 type Props = {
 
@@ -14,10 +15,42 @@ type Props = {
 export const PhotoGallery = ({}:Props)=>{
 
     const {changeColor, theme} = useContext(ChangeThemesContext)
+    const { match, setSize} = useContext(ChangeSizeContext)
+    let checkMatchesLarge:MediaQueryList | null; 
+    let checkMatchesSmall:MediaQueryList | null; 
 
-    const breakPoints = [
-        {width: 1, itemsToShow:1}
-      ]
+    const [breakPoints, setBreakPoints] = useState([
+        {width:1, itemsToShow:2}
+    ])
+  
+   
+    const checkSize =() =>{
+        if(process.browser){
+            window.onresize = ()=>{
+                checkMatchesLarge = window.matchMedia('(max-width:1350px)')
+                checkMatchesSmall = window.matchMedia('(max-width:860px)')
+                if(checkMatchesLarge.matches){
+                    setBreakPoints([{width:200, itemsToShow:2}])
+                }
+        
+                if(checkMatchesSmall.matches){
+                    setBreakPoints([{width:1, itemsToShow:1}])
+                }
+
+                if(!checkMatchesLarge.matches && !checkMatchesSmall.matches){
+                    setBreakPoints([{width:500, itemsToShow:2}])
+                }   
+            }
+        
+        }
+    
+    }
+    useEffect(() =>{
+        checkSize()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [match])
+
+   
 
     const myStyle = {
         myBackground: {
@@ -40,6 +73,18 @@ export const PhotoGallery = ({}:Props)=>{
             <h1 style={{color:theme === 'branco-vermelho-roxo' ? 'var(--black)' : 'white'}}>Nossa galeria de fotos</h1>
              <Carousel isRTL={false} breakPoints={breakPoints}>
                 <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
+                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                </div>
+                <div className={styles.card}>
+                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                </div>
+                <div className={styles.card}>
+                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                </div>
+                <div className={styles.card}>
                     <Image height="250" width="250" src={dogPhoto} alt='foto'/>
                     <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>

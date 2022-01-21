@@ -1,4 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
+import { ChangeSizeContext } from '../../context/ChangeSize'
 import { ChangeThemesContext } from '../../context/ChangeThemes'
 import styles from '../../styles/components/aboutUs.module.scss'
 import { CustomSVG } from '../CustomSVG'
@@ -6,36 +7,14 @@ import { CustomSVG } from '../CustomSVG'
 export const WrappedCardsAboutUs = ()=>{
 
     const { theme, changeColor} = useContext(ChangeThemesContext)
-    const [match, setMatch] = useState('')
-
-    let checkMatchesLarge:MediaQueryList | null; 
-    let checkMatchesSmall:MediaQueryList | null; 
-    const checkSize = ()=>{
-        if(process.browser){
-            checkMatchesLarge = window.matchMedia('(max-width:1350px)')
-            checkMatchesSmall = window.matchMedia('(max-width:860px)')
-            if(checkMatchesLarge.matches){
-                setMatch('large')
-                return '76rem'
-            }
-    
-            if(checkMatchesSmall.matches){
-                setMatch('small')
-                return '29.9rem'
-            }
-
-            if(!checkMatchesLarge.matches && !checkMatchesSmall.matches){
-                return '125rem'
-            }   
-        }
-    }
-
-    useEffect(() =>{
-        if(process.browser){
-            checkSize()
-        }
+    const { setSize} = useContext(ChangeSizeContext)
+   
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [match])
+
+
+
+
+ 
 
     return(
         <div style={{background:changeColor(
@@ -63,7 +42,7 @@ export const WrappedCardsAboutUs = ()=>{
                 <div style={{
                     background:theme.includes('vermelho') ? '#FFFFFF' : '#E3D5E8', 
                     boxShadow:theme.includes('vermelho') ? 'inset 0px 0px 4px 0px #000000' : 'none',
-                    width: checkSize()
+                    width: setSize('76rem', '29.9rem', '125rem')
                     }} className={styles.card}>
                     <div>
                         <h1 style={{color:changeColor(
