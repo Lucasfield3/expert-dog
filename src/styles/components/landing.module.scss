@@ -12,26 +12,28 @@
 
 .logo{
     width: 100%;
+    height: 49.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: flex-end;
-    margin-top: 1.4rem;
     padding: 0 2rem;
     align-items: center;
     grid-gap: 5rem;
 
-    div{
-        align-self: center;
-    }
+   
+}
+
+.image{
+    align-self: center;
 }
 .presentation{
     justify-self: start;
     color:#FFFFFF;
     text-align: center;
     line-height: 4rem;
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: normal;
-    width: 32rem;
+    width: 35rem;
 }
 
 
@@ -46,5 +48,12 @@
     .presentation{
         align-self: center;
         justify-self: none;
+        font-size:2.5rem;
+        width: 32rem;
+    }
+
+    .image{
+        width:30rem;
+        height:30rem;
     }
 }

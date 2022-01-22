@@ -41,23 +41,25 @@ const Landing = ({}:Props) => {
             </header>
             <main className={styles.logo}>
                 <div 
+                className={styles.image}
                 style={{display:theme === '' || 
                 theme === 'padrão' || 
                 theme === 'roxo-preto-gradiente' || 
                 theme === 'roxo-preto-branco'  ? 'block' : 'none'}}>
-                    <Image width='300' height='300' src={logo} alt=''/>
+                    <Image width='350' height='350' src={logo} alt=''/>
                 </div>
-                <div style={{display:theme === 'roxo-branco-gradiente' ? 'block' : 'none'}}>     
-                    <Image width='300' height='300' src={logoPurple} alt=''/>
+                <div className={styles.image} style={{display:theme === 'roxo-branco-gradiente' ? 'block' : 'none'}}>     
+                    <Image width='350' height='350' src={logoPurple} alt=''/>
                 </div>
                 <div 
+                className={styles.image}
                 style={{display:theme === 'branco-vermelho-gradiente' || 
                 theme === 'branco-vermelho' || 
                 theme  === 'branco-vermelho-roxo' ? 'block' : 'none'}}>
-                    <Image width='300' height='300' src={logoRed} alt=''/>                 
+                    <Image width='350' height='350' src={logoRed} alt=''/>                 
                 </div>
-                <div style={{display:theme === 'branco-vermelho-roxo-gradiente' ? 'block' : 'none'}}>
-                    <Image width='300' height='300' src={logoLinear} alt=''/>
+                <div className={styles.image} style={{display:theme === 'branco-vermelho-roxo-gradiente' ? 'block' : 'none'}}>
+                    <Image width='350' height='350' src={logoLinear} alt=''/>
                 </div>
                 <h3 className={styles.presentation} style={{color:changeColor(
                     '#FFFFFF',

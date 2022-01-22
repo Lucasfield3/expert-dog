@@ -56,7 +56,9 @@ export const WrappedCardsAboutUs = ()=>{
                             'var(--red)',
                             
                         )}}>Quem nós somos</h1>
-                        <p style={{color:changeColor(
+                        <p 
+                        className={styles.text}
+                        style={{color:changeColor(
                             'var(--purple)',
                             'var(--purple)',
                             'var(--purple)',

@@ -42,27 +42,27 @@ export const FixedMenu = (props:Props) => {
             <div onClick={props.toAboutUs}>
                 <span style={{background:colorIcons}}></span>
                 <CustomSVG color={{menu:colorIcons}} svgName='about-us'/>
-                <p>Sobre nós</p>
+                <p className={styles.text}>Sobre nós</p>
             </div>
             <div  onClick={props.toFeedback}>
                 <span style={{background:colorIcons}}></span>
                 <CustomSVG color={{menu:colorIcons}} svgName='feedback'/>
-                <p>Feed backs</p>
+                <p className={styles.text}>Feed backs</p>
             </div>
             <div  onClick={props.toHome}>
                 <span style={{background:colorIcons}}></span>
                 <CustomSVG color={{menu:colorIcons}} svgName='dog-house'/>
-                <p>Home</p>
+                <p className={styles.text}>Home</p>
             </div>
             <div onClick={props.toContact}>
                 <span style={{background:colorIcons}}></span>
                 <CustomSVG color={{menu:colorIcons}} svgName='phone'/>
-                <p>Fale conosco</p>
+                <p className={styles.text}>Fale conosco</p>
             </div>
             <div onClick={props.toPhotos}>
                 <span style={{background:colorIcons}}></span>
                 <CustomSVG color={{menu:colorIcons}} svgName='camera'/>
-                <p>Galeria</p>
+                <p className={styles.text}>Galeria</p>
             </div>
         </div>
     );

@@ -41,17 +41,19 @@
             z-index: 9;
         }
   
-        p{
-            color:var(--purple);
-            font-style: normal;
-            font-weight: normal;
-            font-size: 2.5rem;
-            line-height: 4rem;
-            z-index: 9;
-        }
+       
   
     }
   }
+
+  .text{
+    color:var(--purple);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    z-index: 9;
+}
   
 
 .mySvg {
@@ -121,5 +123,8 @@
         transform:translate(91.1%, 208%);
     }
   
+    .text{
+        font-size:2rem;
+    }
   }
   

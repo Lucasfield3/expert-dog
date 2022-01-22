@@ -34,7 +34,7 @@ const Footer = () => {
 
     return (
         <div style={{
-            marginBottom:atTheBottom && '8rem', 
+            marginBottom:atTheBottom && '7.5rem', 
             background:theme === 'branco-vermelho-roxo' ? 'var(--purple)' : 'white',
             color:theme === 'branco-vermelho-roxo' ? 'white' : 'var(--black)',
         }} className={styles.container}>

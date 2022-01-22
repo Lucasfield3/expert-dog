@@ -38,7 +38,7 @@ export const PhotoGallery = ({}:Props)=>{
                 }
 
                 if(!checkMatchesLarge.matches && !checkMatchesSmall.matches){
-                    setBreakPoints([{width:500, itemsToShow:2}])
+                    setBreakPoints([{width:500, itemsToShow:3}])
                 }   
             }
         
@@ -76,19 +76,19 @@ export const PhotoGallery = ({}:Props)=>{
                     <Image height="250" width="250" src={dogPhoto} alt='foto'/>
                     <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
-                <div className={styles.card}>
+                <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
                     <Image height="250" width="250" src={dogPhoto} alt='foto'/>
                     <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
-                <div className={styles.card}>
+                <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
                     <Image height="250" width="250" src={dogPhoto} alt='foto'/>
                     <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
-                <div className={styles.card}>
+                <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
                     <Image height="250" width="250" src={dogPhoto} alt='foto'/>
                     <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
-                <div className={styles.card}>
+                <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
                     <Image height="250" width="250" src={dogPhoto} alt='foto'/>
                     <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
