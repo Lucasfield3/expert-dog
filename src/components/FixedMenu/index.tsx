@@ -47,7 +47,7 @@ export const FixedMenu = (props:Props) => {
             <div  onClick={props.toFeedback}>
                 <span style={{background:colorIcons}}></span>
                 <CustomSVG color={{menu:colorIcons}} svgName='feedback'/>
-                <p className={styles.text}>Feed backs</p>
+                <p className={styles.text}>Feedback</p>
             </div>
             <div  onClick={props.toHome}>
                 <span style={{background:colorIcons}}></span>
