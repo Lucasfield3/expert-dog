@@ -8,7 +8,7 @@ import { FixedMenu } from '../components/FixedMenu';
 import { WrappedCardsFeed } from '../components/WrappedCardsFeed';
 import { WrappedCardsAboutUs } from '../components/WrappedCardsAboutUs';
 
-export const PinkHome = () => {
+ const PinkHome = () => {
     const toHome = useRef<HTMLDivElement>(null)
     const toAboutUs = useRef<HTMLDivElement>(null)
     const toFeedback = useRef<HTMLDivElement>(null)
@@ -47,3 +47,5 @@ export const PinkHome = () => {
     )
 
 }
+
+export default PinkHome

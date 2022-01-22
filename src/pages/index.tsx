@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { PinkHome } from './PinkHome'
+import PinkHome  from './PinkHome'
 
 
 const Home: NextPage = () => {
