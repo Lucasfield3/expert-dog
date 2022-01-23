@@ -1,6 +1,6 @@
 import styles from '../../styles/components/photoGallery.module.scss'
 import Carousel from 'react-elastic-carousel';
-import dogPhoto from '../../../public/images/photos/golden.jpg'
+import dogPhoto from '../../public/images/photos/golden.jpg'
 import cx from 'classnames';
 
 import Image  from 'next/image'

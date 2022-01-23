@@ -1,10 +1,10 @@
 import Image  from 'next/image'
 import React, { CSSProperties, useContext, useEffect } from 'react';
 import styles from '../../styles/components/landing.module.scss'
-import logo from '../../../public/images/Logo-Expert-Creat.png';
-import logoRed from '../../../public/images/logo-red.png';
-import logoPurple from '../../../public/images/logo-purple.svg';
-import logoLinear from '../../../public/images/logo-linear.png';
+import logo from '../../public/images/Logo-Expert-Creat.png';
+import logoRed from '../../public/images/logo-red.png';
+import logoPurple from '../../public/images/logo-purple.svg';
+import logoLinear from '../../public/images/logo-linear.png';
 import { CustomSVG } from '../CustomSVG';
 import { SelectThemes } from '../SelectThemes';
 import { ChangeThemesContext } from '../../context/ChangeThemes';

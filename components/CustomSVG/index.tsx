@@ -1,9 +1,10 @@
 import { SVGAttributes, useContext } from "react"
 import styles from '../../styles/components/svgIcons.module.scss'
 import Image  from 'next/image'
-import dogHouseViolet from '../../../public/images/dog-house-violet.svg'
-import dogHouseRed from '../../../public/images/dog-house-red.svg'
+import dogHouseViolet from '../../public/images/dog-house-violet.svg'
+import dogHouseRed from '../../public/images/dog-house-red.svg'
 import { ChangeThemesContext } from "../../context/ChangeThemes"
+
 
 
 type SVGProps = {
