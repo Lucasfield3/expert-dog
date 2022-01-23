@@ -125,13 +125,14 @@
     }
   }
 
-@media (max-width: 280px){
+@media (max-width: 420px){
     .container{
         height: 40.5rem;
     }
 
     .card{
         height: 34rem;
+        width: 21.9rem;
     }
     .wrapedCards{
         margin: 0 3rem;

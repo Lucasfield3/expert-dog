@@ -68,8 +68,9 @@
     z-index: 9;
 }
 
-.aspasPadding{
+.text{
     padding:0 3rem; 
+    font-size: 2.5rem;
 }
 
 .aspas1{
@@ -78,7 +79,7 @@
 }
 .aspas2{
     position: absolute;
-    transform: scale(1.2) translate(3952%, 45%);
+    transform: scale(1.2) translate(912%, 235%);
 }
 
 
@@ -127,7 +128,7 @@
     }
 
     .aspas2 {
-        transform:scale(1.2) translate(1633%, 215%);
+        transform: scale(1.2) translate(783%, 425%);
     }
   }
   
@@ -158,9 +159,13 @@
         transform: scale(1.2) translate(773%, 925%);
     }
   
+    .text{
+        font-size:2rem;
+    }
+
   }
   
-  @media (max-width: 280px){
+  @media (max-width: 420px){
     .container{
         height: 42.5rem;
     }
@@ -186,7 +191,7 @@
         line-height: 3rem;
     }
 
-    .aspasPadding{
+    .text{
         font-size: 1.7rem;
         line-height: 3rem;
         padding: 0px 1.6rem;

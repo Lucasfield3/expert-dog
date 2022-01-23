@@ -1,0 +1,163 @@
+.container {
+  background: #A578B6;
+  height: 49.5rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.wrapedCards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  padding-top: 1rem;
+  margin: 0 5rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 38.7rem;
+  width: 125rem;
+  background: #E3D5E8;
+  border-top-left-radius: 2rem;
+  padding: 0 3rem;
+  position: relative;
+}
+
+.card div {
+  z-index: 9;
+  height: 100%;
+}
+
+.mySvg {
+  position: absolute;
+  -webkit-transform: scale(5.9) translate(150%, -1%) rotate(-28deg);
+          transform: scale(5.9) translate(150%, -1%) rotate(-28deg);
+}
+
+.mySpan1 {
+  height: 7.9rem;
+  width: 11.3rem;
+  border-top-left-radius: 2rem;
+  background: var(--purple);
+  position: absolute;
+  -webkit-transform: translate(-510%, -205%);
+          transform: translate(-510%, -205%);
+}
+
+.mySpan2 {
+  height: 7.9rem;
+  width: 11.3rem;
+  background: var(--purple);
+  position: absolute;
+  -webkit-transform: translate(511%, 208%);
+          transform: translate(511%, 208%);
+}
+
+.title {
+  color: #c2387d;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 4rem;
+  text-align: center;
+  z-index: 9;
+}
+
+.text {
+  color: var(--purple);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  z-index: 9;
+}
+
+@media (max-width: 1350px) {
+  .card {
+    width: 76rem;
+  }
+  .mySvg {
+    -webkit-transform: scale(5.9) translate(87%, -2%) rotate(-28deg);
+            transform: scale(5.9) translate(87%, -2%) rotate(-28deg);
+  }
+  .mySpan1 {
+    -webkit-transform: translate(-293.9%, -205%);
+            transform: translate(-293.9%, -205%);
+  }
+  .mySpan2 {
+    -webkit-transform: translate(295.1%, 208%);
+            transform: translate(295.1%, 208%);
+  }
+}
+
+@media (max-width: 860px) {
+  .card {
+    width: 29.9rem;
+    padding: 0 1.8rem;
+  }
+  .mySvg {
+    -webkit-transform: scale(4.9) translate(33%, -2%) rotate(-28deg);
+            transform: scale(4.9) translate(33%, -2%) rotate(-28deg);
+  }
+  .mySpan1 {
+    -webkit-transform: translate(-89.9%, -205%);
+            transform: translate(-89.9%, -205%);
+  }
+  .mySpan2 {
+    -webkit-transform: translate(91.1%, 208%);
+            transform: translate(91.1%, 208%);
+  }
+  .text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .container {
+    height: 40.5rem;
+  }
+  .card {
+    height: 34rem;
+    width: 21.9rem;
+  }
+  .wrapedCards {
+    margin: 0 3rem;
+  }
+  .mySpan1 {
+    -webkit-transform: translate(-52.9%, -174%);
+            transform: translate(-52.9%, -174%);
+  }
+  .mySpan2 {
+    -webkit-transform: translate(53.1%, 173%);
+            transform: translate(53.1%, 173%);
+  }
+  .title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .text {
+    font-size: 1.7rem;
+    line-height: 3rem;
+  }
+  .mySvg {
+    -webkit-transform: scale(3.3) translate(28%, 0%) rotate(-28deg);
+            transform: scale(3.3) translate(28%, 0%) rotate(-28deg);
+  }
+}
+/*# sourceMappingURL=aboutUs.module.css.map */

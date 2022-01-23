@@ -106,7 +106,7 @@ export const WrappedCardsFeed = (props: Props) => {
                         <div>
                             <h1 className={styles.title} style={myStyle.myH1}>O que falam sobre nós.</h1>
                             <CustomSVG color={{aspas:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} svgName='aspas' classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
-                            <p style={myStyle.myP} className={styles.aspasPadding}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            <p style={myStyle.myP} className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <CustomSVG svgprops={{className:styles.mySvg}} color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
@@ -119,7 +119,7 @@ export const WrappedCardsFeed = (props: Props) => {
                         <div>
                             <h1 className={styles.title} style={myStyle.myH1}>O que falam sobre nós.</h1>
                             <CustomSVG color={{aspas:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} svgName='aspas' classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
-                            <p style={myStyle.myP} className={styles.aspasPadding}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            <p style={myStyle.myP} className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                         </div>
                         <CustomSVG svgprops={{className:styles.mySvg}} color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
