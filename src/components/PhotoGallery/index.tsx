@@ -41,6 +41,21 @@ export const PhotoGallery = ({}:Props)=>{
                     setBreakPoints([{width:500, itemsToShow:3}])
                 }   
             }
+
+            checkMatchesLarge = window.matchMedia('(max-width:1350px)')
+            checkMatchesSmall = window.matchMedia('(max-width:860px)')
+            if(checkMatchesLarge.matches){
+                setBreakPoints([{width:200, itemsToShow:2}])
+            }
+    
+            if(checkMatchesSmall.matches){
+                setBreakPoints([{width:1, itemsToShow:1}])
+            }
+
+            if(!checkMatchesLarge.matches && !checkMatchesSmall.matches){
+                setBreakPoints([{width:500, itemsToShow:3}])
+            }   
+
         
         }
     
@@ -50,6 +65,10 @@ export const PhotoGallery = ({}:Props)=>{
     // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [match])
 
+    useEffect(()=>{
+        checkSize()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    },[])
    
 
     const myStyle = {
@@ -70,27 +89,37 @@ export const PhotoGallery = ({}:Props)=>{
     
     return(
         <div style={myStyle.myBackground} className={styles.container}>
-            <h1 style={{color:theme === 'branco-vermelho-roxo' ? 'var(--black)' : 'white'}}>Nossa galeria de fotos</h1>
+            <h1 className={styles.title} style={{color:theme === 'branco-vermelho-roxo' ? 'var(--black)' : 'white'}}>Nossa galeria de fotos</h1>
              <Carousel isRTL={false} breakPoints={breakPoints}>
                 <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
-                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
-                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                    <div className={styles.image}>
+                        <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    </div>
+                    <p className={styles.text}>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
                 <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
-                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
-                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                   <div className={styles.image}>
+                        <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    </div>
+                    <p className={styles.text}>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
                 <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
-                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
-                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                   <div className={styles.image}>
+                        <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    </div>
+                    <p className={styles.text}>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
                 <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
-                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
-                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                   <div className={styles.image}>
+                        <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    </div>
+                    <p className={styles.text}>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
                 <div style={{border:theme === 'branco-vermelho-roxo' ? '1px solid' : 'none'}} className={styles.card}>
-                    <Image height="250" width="250" src={dogPhoto} alt='foto'/>
-                    <p>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
+                   <div className={styles.image}>
+                        <Image height="250" width="250" src={dogPhoto} alt='foto'/>
+                    </div>
+                    <p className={styles.text}>Golden retriver brincando depois de uma sessão. Texto descritivo.</p>
                 </div>
             </Carousel>
         </div>

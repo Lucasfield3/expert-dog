@@ -45,7 +45,7 @@ export const WrappedCardsAboutUs = ()=>{
                     width: setSize('76rem', '29.9rem', '125rem')
                     }} className={styles.card}>
                     <div>
-                        <h1 style={{color:changeColor(
+                        <h1 className={styles.title} style={{color:changeColor(
                             '#C2397D',
                             'var(--black)',
                             'var(--black)',

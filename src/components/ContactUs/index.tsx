@@ -81,12 +81,12 @@ export const ContactUs = ({}:Props)=>{
       
     return(
         <div style={myStyle.myBackground} className={styles.container}>
-            <h1 style={myStyle.myTitle}>Contato</h1>
+            <h1 className={styles.title} style={myStyle.myTitle}>Contato</h1>
             <div id='list' className={styles.form}>
-                <input style={myStyle.myInputs} placeholder='Seu nome' type="text"/>
-                <input style={myStyle.myInputs} placeholder='Seu email' type="text"/>
-                <input style={myStyle.myInputs} placeholder='Seu telefone' type="text"/>
-                <textarea style={myStyle.myInputs} placeholder='Sua mensagem'/>
+                <input className={styles.text} style={myStyle.myInputs} placeholder='Seu nome' type="text"/>
+                <input className={styles.text}  style={myStyle.myInputs} placeholder='Seu email' type="text"/>
+                <input className={styles.text}  style={myStyle.myInputs} placeholder='Seu telefone' type="text"/>
+                <textarea className={styles.areaText} style={myStyle.myInputs} placeholder='Sua mensagem'/>
                 <button style={myStyle.myButton} type="submit">Enviar</button>
             </div>
         </div>

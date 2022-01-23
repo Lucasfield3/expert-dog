@@ -31,30 +31,8 @@
         z-index: 9;
         height: 100%;
   
-        h1{
-            color:hsl(330, 55%, 49%);
-            font-style: normal;
-            font-weight: normal;
-            font-size: 3rem;
-            line-height: 4rem;
-            text-align: center;
-            z-index: 9;
-        }
-  
-       
-  
     }
-  }
-
-  .text{
-    color:var(--purple);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 2.5rem;
-    line-height: 4rem;
-    z-index: 9;
 }
-  
 
 .mySvg {
     position: absolute;
@@ -76,6 +54,25 @@
     background: var(--purple);
     position: absolute;
     transform: translate(511%, 208%);
+}
+
+.title{
+    color:hsl(330, 55%, 49%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    z-index: 9;
+}
+
+.text{
+    color:var(--purple);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.5rem;
+    line-height: 4rem;
+    z-index: 9;
 }
 
 @media (max-width: 1350px) {
@@ -127,4 +124,40 @@
         font-size:2rem;
     }
   }
+
+@media (max-width: 280px){
+    .container{
+        height: 40.5rem;
+    }
+
+    .card{
+        height: 34rem;
+    }
+    .wrapedCards{
+        margin: 0 3rem;
+    }
+
+    .mySpan1{
+        transform: translate(-52.9%,-174%);
+    }
+
+    .mySpan2{
+        transform: translate(53.1%,173%);
+    }
+
+    .title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .text{
+        font-size: 1.7rem;
+        line-height: 3rem;
+    }
+
+    .mySvg{
+        transform: scale(3.3) translate(28%,0%) rotate(-28deg);
+    }
+}
+
   

@@ -44,35 +44,32 @@
         height: 100%;
 
         
-        .aspasPadding{
-            padding:0 3rem; 
-        }
-
+     
     }
 
-   
+}
 
-    h1{
-        color:hsl(330, 55%, 49%);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 3rem;
-        line-height: 4rem;
-        text-align: center;
-        z-index: 9;
-    }
+.text{
+    color:var(--purple);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2rem;
+    line-height: 4rem;
+    z-index: 9;
+}
 
-    p{
-        color:var(--purple);
-        font-style: normal;
-        font-weight: normal;
-        font-size: 2rem;
-        line-height: 4rem;
-        z-index: 9;
-    }
+.title{
+    color:hsl(330, 55%, 49%);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 4rem;
+    text-align: center;
+    z-index: 9;
+}
 
-    
-
+.aspasPadding{
+    padding:0 3rem; 
 }
 
 .aspas1{
@@ -163,3 +160,49 @@
   
   }
   
+  @media (max-width: 280px){
+    .container{
+        height: 42.5rem;
+    }
+
+    .card{
+        width: 21.9rem;
+        height: 34rem;
+    }
+    .wrapedCards{
+        margin: 0 2rem;
+    }
+
+    .mySpan1{
+        transform: translate(-52.9%,-174%);
+    }
+
+    .mySpan2{
+        transform: translate(53.1%,173%);
+    }
+
+    .title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .aspasPadding{
+        font-size: 1.7rem;
+        line-height: 3rem;
+        padding: 0px 1.6rem;
+    }
+
+    .mySvg{
+        transform: scale(3.3) translate(28%,0%) rotate(-28deg);
+    }
+
+    .aspas1{
+        transform: scale(1) translate(-41%,1%);
+    }
+
+    .aspas2{
+        transform: scale(1) translate(602%,970%);
+    }
+
+
+}
