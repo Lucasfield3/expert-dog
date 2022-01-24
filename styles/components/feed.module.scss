@@ -136,36 +136,84 @@
   @media (max-width: 860px) {
   
     .card{
-        width: 29.9rem;
-        padding:0 1.8rem;
+        width: 52.9rem;
+        padding: 0 1.8rem;
     }
   
     .mySvg {
         
-        transform: scale(4.9) translate(33%, -2%) rotate(-28deg);
+        transform: scale(5.9) translate(59%, -2%) rotate(-28deg);
     }
   
     .mySpan1{
         
-        transform:translate(-89.9%, -205%);
+        transform:translate(-191.9%, -205%);
     }
   
     .mySpan2{
         
-        transform:translate(91.1%, 208%);
+        transform:translate(193.1%, 208%);
     }
 
     .aspas2{
-        transform: scale(1.2) translate(773%, 925%);
+        transform: scale(1.2) translate(1183%, 395%);
     }
   
     .text{
-        font-size:2rem;
+        font-size:2.1rem;
     }
 
   }
   
-  @media (max-width: 420px){
+  @media (max-width: 640px){
+    .container{
+        height: 42.5rem;
+    }
+
+    .card{
+        width: 30.9rem;
+        height: 34rem;
+    }
+    .wrapedCards{
+        margin: 0 2rem;
+    }
+
+    .mySpan1{
+        transform: translate(-91.9%, -174%);
+    }
+
+    .mySpan2{
+        transform:translate(93.1%, 173%);
+    }
+
+    .title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .text{
+        font-size: 1.9rem;
+        line-height: 3rem;
+        padding: 0px 1.6rem;
+    }
+
+    .mySvg{
+        transform: scale(4.3) translate(40%, 0%) rotate(-28deg);
+    }
+
+    .aspas1{
+        transform: scale(1) translate(-41%, 1%);
+    }
+
+    .aspas2{
+        transform:scale(1) translate(671%, 670%);
+    }
+
+
+}
+
+
+@media (max-width: 370px){
     .container{
         height: 42.5rem;
     }

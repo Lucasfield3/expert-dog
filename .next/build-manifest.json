@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/I-a_3622UgKCb0GFK7LKU/_buildManifest.js",
-    "static/I-a_3622UgKCb0GFK7LKU/_ssgManifest.js"
+    "static/IqMHRyvyS8zM6WT9Hoa4E/_buildManifest.js",
+    "static/IqMHRyvyS8zM6WT9Hoa4E/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -14,8 +14,8 @@
       "static/chunks/framework-2191d16384373197bc0a.js",
       "static/chunks/main-c4f2541b93e4ae8b71f8.js",
       "static/chunks/797-8e1bce12a1676bc494d2.js",
-      "static/css/08c31dfa339f3e039674.css",
-      "static/chunks/696-af9f1e9a1f662eb053d1.js",
+      "static/css/846e9e89d59a083bc043.css",
+      "static/chunks/696-5c503e023be0d2763a5f.js",
       "static/chunks/pages/index-07b3ca33e36e0488f788.js"
     ],
     "/PinkHome": [
@@ -23,8 +23,8 @@
       "static/chunks/framework-2191d16384373197bc0a.js",
       "static/chunks/main-c4f2541b93e4ae8b71f8.js",
       "static/chunks/797-8e1bce12a1676bc494d2.js",
-      "static/css/08c31dfa339f3e039674.css",
-      "static/chunks/696-af9f1e9a1f662eb053d1.js",
+      "static/css/846e9e89d59a083bc043.css",
+      "static/chunks/696-5c503e023be0d2763a5f.js",
       "static/chunks/pages/PinkHome-d34e2bc57aea474c3944.js"
     ],
     "/_app": [

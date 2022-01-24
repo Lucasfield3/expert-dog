@@ -1206,7 +1206,7 @@ const WrappedCardsAboutUs = () => {
         style: {
           background: theme.includes('vermelho') ? '#FFFFFF' : '#E3D5E8',
           boxShadow: theme.includes('vermelho') ? 'inset 0px 0px 4px 0px #000000' : 'none',
-          width: setSize('76rem', '29.9rem', '125rem')
+          width: setSize('76rem', '40.9rem', '125rem')
         },
         className: (aboutUs_module_default()).card,
         children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("div", {
