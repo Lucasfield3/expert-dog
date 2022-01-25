@@ -340,8 +340,8 @@ const CustomSVG = props => {
           })
         })
       })]
-    })), props.svgName === 'aspas' && /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
-      children: [/*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", _objectSpread(_objectSpread({}, props.svgprops), {}, {
+    })), props.svgName === 'aspas1' && /*#__PURE__*/jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+      children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", _objectSpread(_objectSpread({}, props.svgprops), {}, {
         className: props.classNameAspas1,
         width: "24",
         height: "22",
@@ -367,7 +367,9 @@ const CustomSVG = props => {
           strokeLinecap: "round",
           strokeLinejoin: "round"
         })]
-      })), /*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", _objectSpread(_objectSpread({}, props.svgprops), {}, {
+      }))
+    }), props.svgName === 'aspas2' && /*#__PURE__*/jsx_runtime_.jsx(jsx_runtime_.Fragment, {
+      children: /*#__PURE__*/(0,jsx_runtime_.jsxs)("svg", _objectSpread(_objectSpread({}, props.svgprops), {}, {
         className: props.classNameAspas2,
         width: "24",
         height: "19",
@@ -393,7 +395,7 @@ const CustomSVG = props => {
           strokeLinecap: "round",
           strokeLinejoin: "round"
         })]
-      }))]
+      }))
     }), props.svgName === 'media' && /*#__PURE__*/(0,jsx_runtime_.jsxs)(jsx_runtime_.Fragment, {
       children: [/*#__PURE__*/jsx_runtime_.jsx("a", {
         title: "instagram",
@@ -1101,17 +1103,16 @@ const WrappedCardsFeed = props => {
               className: (feed_module_default()).title,
               style: myStyle.myH1,
               children: "O que falam sobre n\xF3s"
-            }), /*#__PURE__*/jsx_runtime_.jsx(CustomSVG, {
-              color: {
-                aspas: myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)' : 'var(--purple)'
-              },
-              svgName: "aspas",
-              classNameAspas2: (feed_module_default()).aspas2,
-              classNameAspas1: (feed_module_default()).aspas1
-            }), /*#__PURE__*/jsx_runtime_.jsx("p", {
+            }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
               style: myStyle.myP,
               className: (feed_module_default()).text,
-              children: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+                className: (feed_module_default()).aspas,
+                children: "\u275D"
+              }), "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry", /*#__PURE__*/jsx_runtime_.jsx("span", {
+                className: (feed_module_default()).aspas,
+                children: "\u275E"
+              }), "."]
             })]
           }), /*#__PURE__*/jsx_runtime_.jsx(CustomSVG, {
             svgprops: {
@@ -1345,13 +1346,13 @@ module.exports = {
 	"container": "feed_container__2z78q",
 	"wrapedCards": "feed_wrapedCards__2C8jR",
 	"card": "feed_card__J_9S6",
+	"aspas": "feed_aspas__13Qnz",
 	"text": "feed_text__qlzMo",
 	"title": "feed_title__38rJ-",
-	"aspas1": "feed_aspas1__1zKjt",
-	"aspas2": "feed_aspas2__13AGJ",
 	"mySvg": "feed_mySvg__3TiIK",
 	"mySpan1": "feed_mySpan1__1dmVp",
-	"mySpan2": "feed_mySpan2__3Z-aS"
+	"mySpan2": "feed_mySpan2__3Z-aS",
+	"aspas1": "feed_aspas1__1zKjt"
 };
 
 

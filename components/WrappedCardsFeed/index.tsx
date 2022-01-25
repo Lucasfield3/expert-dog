@@ -105,9 +105,11 @@ export const WrappedCardsFeed = (props: Props) => {
                     <div style={myStyle.myCard} className={styles.card}>
                         <div>
                             <h1 className={styles.title} style={myStyle.myH1}>O que falam sobre nós</h1>
-                            <CustomSVG color={{aspas:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} svgName='aspas' classNameAspas2={styles.aspas2} classNameAspas1={styles.aspas1}/>
-                            <p style={myStyle.myP} className={styles.text}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                            {/* <CustomSVG color={{aspas:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} svgName='aspas1' classNameAspas1={styles.aspas1}/> */}
+                            <p style={myStyle.myP} className={styles.text}><span className={styles.aspas}>❝</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry<span className={styles.aspas}>❞</span>. 
+                               
+                            </p>
                         </div>
                         <CustomSVG svgprops={{className:styles.mySvg}} color={{dogPaw:myStyle.mySvgFillPaw}} svgName='dog-paw'/>
                     </div>
