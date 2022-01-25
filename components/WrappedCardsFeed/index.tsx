@@ -106,8 +106,8 @@ export const WrappedCardsFeed = (props: Props) => {
                         <div>
                             <h1 className={styles.title} style={myStyle.myH1}>O que falam sobre nós</h1>
                             {/* <CustomSVG color={{aspas:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} svgName='aspas1' classNameAspas1={styles.aspas1}/> */}
-                            <p style={myStyle.myP} className={styles.text}><span className={styles.aspas}>❝</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry<span className={styles.aspas}>❞</span>. 
+                            <p style={myStyle.myP} className={styles.text}><span style={{color:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} className={styles.aspas}>❝</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry<span style={{color:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} className={styles.aspas}>❞</span>. 
                                
                             </p>
                         </div>
@@ -121,8 +121,8 @@ export const WrappedCardsFeed = (props: Props) => {
                     <div>
                             <h1 className={styles.title} style={myStyle.myH1}>O que falam sobre nós</h1>
                             {/* <CustomSVG color={{aspas:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} svgName='aspas1' classNameAspas1={styles.aspas1}/> */}
-                            <p style={myStyle.myP} className={styles.text}><span className={styles.aspas}>❝</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry<span className={styles.aspas}>❞</span>. 
+                            <p style={myStyle.myP} className={styles.text}><span style={{color:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} className={styles.aspas}>❝</span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry<span style={{color:myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)': 'var(--purple)'}} className={styles.aspas}>❞</span>. 
                                
                             </p>
                         </div>

@@ -1107,9 +1107,15 @@ const WrappedCardsFeed = props => {
               style: myStyle.myP,
               className: (feed_module_default()).text,
               children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+                style: {
+                  color: myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)' : 'var(--purple)'
+                },
                 className: (feed_module_default()).aspas,
                 children: "\u275D"
               }), "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry", /*#__PURE__*/jsx_runtime_.jsx("span", {
+                style: {
+                  color: myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)' : 'var(--purple)'
+                },
                 className: (feed_module_default()).aspas,
                 children: "\u275E"
               }), "."]
@@ -1144,9 +1150,15 @@ const WrappedCardsFeed = props => {
               style: myStyle.myP,
               className: (feed_module_default()).text,
               children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+                style: {
+                  color: myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)' : 'var(--purple)'
+                },
                 className: (feed_module_default()).aspas,
                 children: "\u275D"
               }), "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry", /*#__PURE__*/jsx_runtime_.jsx("span", {
+                style: {
+                  color: myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)' : 'var(--purple)'
+                },
                 className: (feed_module_default()).aspas,
                 children: "\u275E"
               }), "."]
