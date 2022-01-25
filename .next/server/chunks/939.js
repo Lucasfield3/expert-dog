@@ -1140,17 +1140,16 @@ const WrappedCardsFeed = props => {
               className: (feed_module_default()).title,
               style: myStyle.myH1,
               children: "O que falam sobre n\xF3s"
-            }), /*#__PURE__*/jsx_runtime_.jsx(CustomSVG, {
-              color: {
-                aspas: myStyle.mySvgFillPaw === 'var(--soft-red)' ? 'var(--red)' : 'var(--purple)'
-              },
-              svgName: "aspas",
-              classNameAspas2: (feed_module_default()).aspas2,
-              classNameAspas1: (feed_module_default()).aspas1
-            }), /*#__PURE__*/jsx_runtime_.jsx("p", {
+            }), /*#__PURE__*/(0,jsx_runtime_.jsxs)("p", {
               style: myStyle.myP,
               className: (feed_module_default()).text,
-              children: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+              children: [/*#__PURE__*/jsx_runtime_.jsx("span", {
+                className: (feed_module_default()).aspas,
+                children: "\u275D"
+              }), "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry", /*#__PURE__*/jsx_runtime_.jsx("span", {
+                className: (feed_module_default()).aspas,
+                children: "\u275E"
+              }), "."]
             })]
           }), /*#__PURE__*/jsx_runtime_.jsx(CustomSVG, {
             svgprops: {

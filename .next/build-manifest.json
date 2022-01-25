@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/W9Jv7xORQVx4dJN6ui-aC/_buildManifest.js",
-    "static/W9Jv7xORQVx4dJN6ui-aC/_ssgManifest.js"
+    "static/9Ut_UJFAuYxOuRzoLyjGe/_buildManifest.js",
+    "static/9Ut_UJFAuYxOuRzoLyjGe/_ssgManifest.js"
   ],
   "pages": {
     "/": [
@@ -15,7 +15,7 @@
       "static/chunks/main-c4f2541b93e4ae8b71f8.js",
       "static/chunks/797-8e1bce12a1676bc494d2.js",
       "static/css/25aa1290003a07d7c41c.css",
-      "static/chunks/696-56f7c932d92946dd959e.js",
+      "static/chunks/696-16936002b896e7bdca20.js",
       "static/chunks/pages/index-07b3ca33e36e0488f788.js"
     ],
     "/PinkHome": [
@@ -24,7 +24,7 @@
       "static/chunks/main-c4f2541b93e4ae8b71f8.js",
       "static/chunks/797-8e1bce12a1676bc494d2.js",
       "static/css/25aa1290003a07d7c41c.css",
-      "static/chunks/696-56f7c932d92946dd959e.js",
+      "static/chunks/696-16936002b896e7bdca20.js",
       "static/chunks/pages/PinkHome-d34e2bc57aea474c3944.js"
     ],
     "/_app": [
