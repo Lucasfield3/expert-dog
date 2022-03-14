@@ -12,7 +12,7 @@ Link: <a href="https://expert-dog.vercel.app/">https://expert-dog.vercel.app/</a
   <img align='center' alt='typescript' title='typescript' height='30' width='40' src='https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg' />
 </div>
 
-<h3>Landing page themes:</h3>
+<h3>Landing page themes(Figma):</h3>
 <img src="https://user-images.githubusercontent.com/62312987/158236056-3aeb7fd1-5d81-4145-9402-fcc643948173.svg"/>
 
 
