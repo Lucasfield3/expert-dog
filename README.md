@@ -1,6 +1,6 @@
 ## Expert Dog
 
-Site com o intuido de praticas de design e estilização usando como modelo um site de divulgação de empresa.
+Site com o intuito de praticas de design e estilização usando como modelo um site de divulgação de empresa.
 
 Link: <a href="https://expert-dog.vercel.app/">https://expert-dog.vercel.app/</a>
 
